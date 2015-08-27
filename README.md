@@ -11,7 +11,7 @@ This is questionnaire django models that fit with the Forms System Mysql DB.
 In your project settings, add to INSTALLED_APPS
 
     'questionnaire',
-    'importexport',
+    'import_export',
 
 then
 
@@ -37,7 +37,7 @@ Add in your manage.py immediately under `import sys`
 In your project settings, add to INSTALLED_APPS
 
     'questionnaire',
-    'importexport',
+    'import_export',
     
 Also in your project settings add your DB details, e.g. :
 
