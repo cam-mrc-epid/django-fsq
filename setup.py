@@ -12,6 +12,7 @@ setup(
     version='0.1',
     packages=['questionnaire'],
     include_package_data=True,
+    install_requires=['django-import-export',],
     license='',  # example license
     description='A simple Django app to connect to Forms Mysql DB.',
     long_description=README,
