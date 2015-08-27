@@ -42,7 +42,7 @@ In your project settings, add to INSTALLED_APPS
 Also in your project settings add your DB details, e.g. :
 
     'db3': {
-        'ENGINE': 'django_mysql_fix.backends.mysql',
+        'ENGINE': 'djang0.db.backends.mysql',
         'NAME': 'mrc_epid_fenland',
         'USER': 'david',
         'PASSWORD': '*****',
