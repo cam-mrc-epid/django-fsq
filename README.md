@@ -18,6 +18,26 @@ then
     python manage.py migrate
     
 ###Case 2:  Set up with pre-existing MySQL DB.
+You need to install 
+
+        pip install pymysql
+        
+Edit your manage.py to look like this
+
+        #!/usr/bin/env python
+        import os
+        import sys
+        try:
+            import pymysql
+            pymysql.install_as_MySQLdb()
+        except ImportError:
+            pass 
+        
+        if __name__ == "__main__":
+            os.environ.setdefault("DJANGO_SETTINGS_MODULE", "fenland_api.settings")
+            from django.core.management import execute_from_command_line
+            execute_from_command_line(sys.argv)
+
 
 In your project settings, add to INSTALLED_APPS
 
@@ -35,3 +55,8 @@ Also in your project settings add your DB details, e.g. :
         'PORT': '3306',
     },
     
+Also in the project settings add the setting
+
+    DATABASE_ROUTERS = ['questionnaire.routers.PlayRouter',]
+    
+
