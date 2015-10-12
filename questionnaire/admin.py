@@ -55,7 +55,7 @@ class ResultsAdmin(ImportExportModelAdmin):
 admin.site.register(Results, ResultsAdmin)
 
 
-class ProgressAdmin(admin.ModelAdmin):
+class ProgressAdmin(ImportExportModelAdmin):
     resource_class = ProgressResource
     list_filter = ('questionnaire_id', 'started', 'finished')
     search_fields = ('user__user_id', 'questionnaire_id')
@@ -64,7 +64,7 @@ class ProgressAdmin(admin.ModelAdmin):
 admin.site.register(Progress, ProgressAdmin)
 
 
-class QuestionnairesAdmin(admin.ModelAdmin):
+class QuestionnairesAdmin(ImportExportModelAdmin):
     resource_class = QuestionnairesResource
     list_filter = ('study_name', 'questionnaire_id')
     list_display = ('questionnaire_id', 'questionnaire_name', 'study_name')
@@ -72,7 +72,7 @@ class QuestionnairesAdmin(admin.ModelAdmin):
 admin.site.register(Questionnaires, QuestionnairesAdmin)
 
 
-class RolesAdmin(admin.ModelAdmin):
+class RolesAdmin(ImportExportModelAdmin):
     resource_class = RolesResource
     search_fields = ('user__user_id',)
     list_display = ('user_id', 'role')
@@ -81,7 +81,7 @@ class RolesAdmin(admin.ModelAdmin):
 admin.site.register(Roles, RolesAdmin)
 
 
-class GroupsAdmin(admin.ModelAdmin):
+class GroupsAdmin(ImportExportModelAdmin):
     resource_class = GroupsResource
     list_display = ('user_id', 'study_name', 'user_group')
     list_filter = ('study_name', 'user_group')
