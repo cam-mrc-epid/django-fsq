@@ -7,7 +7,7 @@ Django-fsq is a package which works with Django.  Install with pip
 
 This will install it directly into your site-packages directory.  If you are using virtualenv, this will be inside the Lib folder at your virtualenv's home directory.  Alternatively if you can install it like this
 
-    pip install -e git+git://github.comcam-mrc-epid/django-fsq#egg=django-fsq
+    pip install -e git+git://github.com/cam-mrc-epid/django-fsq#egg=django-fsq
 
 This will create a source folder in your virtulenv home folder and clones the entire package to that folder.  This requires git to be installed on your system.  You can work with the code directly in this location and use git there as normal.
 
