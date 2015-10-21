@@ -3,7 +3,7 @@ This is questionnaire django models that fit with the Forms System Mysql DB.
 
 ##Installation
 
-    pip install git+git://github.com/davidgillies/django-fsq
+    pip install git+git://github.com/cam-mrc-epid/django-fsq
     
 ##Settings
 ###Case 1:  Normal django app.  
